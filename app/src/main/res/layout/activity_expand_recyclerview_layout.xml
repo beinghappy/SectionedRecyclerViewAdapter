@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <io.github.luizgrp.sectionedrecyclerviewadapter.demo.ExpandableGridView
+        xmlns:grid="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/egv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        grid:group_clickable="true"
+        grid:horizontal_spacing="10dp"
+        grid:overwrite_measure="true"
+        grid:vertical_spacing="10dp" />
+</RelativeLayout>
