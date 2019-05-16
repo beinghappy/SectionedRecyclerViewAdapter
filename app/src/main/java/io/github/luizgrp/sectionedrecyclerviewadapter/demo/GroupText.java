@@ -1,6 +1,5 @@
 package io.github.luizgrp.sectionedrecyclerviewadapter.demo;
 
-import com.thoughtbot.expandablerecyclerview.models.ExpandableGroup;
 
 import java.util.List;
 
@@ -11,8 +10,33 @@ import java.util.List;
  * @author tanglong
  * @since version ${version}
  */
-public class GroupText extends ExpandableGroup<ChildText> {
+public class GroupText {
+    private String title;
+    private List<ChildText> items;
+
     public GroupText(String title, List<ChildText> items) {
-        super(title, items);
+
+        this.title = title;
+        this.items = items;
+    }
+
+    public int getItemCount() {
+        return items == null ? 0 : items.size();
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public List<ChildText> getItems() {
+        return items;
+    }
+
+    public void setItems(List<ChildText> items) {
+        this.items = items;
     }
 }

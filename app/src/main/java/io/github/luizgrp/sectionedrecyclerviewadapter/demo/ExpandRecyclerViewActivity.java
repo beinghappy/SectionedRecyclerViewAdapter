@@ -10,10 +10,6 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.linyuzai.expandablegridview.ExpandableGridAdapter;
-import com.linyuzai.expandablegridview.ExpandableGridView;
-import com.linyuzai.expandablegridview.OnGridItemClickListener;
-
 import java.util.ArrayList;
 import java.util.List;
 
